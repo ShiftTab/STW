@@ -100,40 +100,103 @@
 
 ?>
 
-<div id="indexContainerWrapper">
-    <div id="weeklyContainer">
-   <div id="header_weekly">
-    <h2>Testing...</h2>
+<div id="subNavWrapper">
+    <ul class="subNav">
+        <li><a href="#">Login</a></li> or <li><a href="#">Signup</a></li>
+    </ul>
+</div>
+
+<div id="mainWrapper">
+    <div id="indexContentWrapper">
+    <div id="alertBar">
+        <p>This website is currently under development!</p>
     </div>
-    <div id="container_weekly">
-        test
-    <!--<div class="containerForgottenPassword">
-        <a href="#">Forgotten password?</a>
+        <!--<div id="logoMain">
+        <img src="images/hexacraft.png" alt="">
     </div>-->
+        <div id="loginMainContainer">
+            <div id="loginMainHeader">
+                <h2>Login:</h2>
+            </div>
+            <div id="loginMainContent">
+                <div id="loginMainForm">
+                <table>
+                    <tr>
+                        <td width="40%" valign="top">
+                            <form action="index.php" method="POST">
+                                <input type="text" name="user_login" size="25" placeholder="Username" /><br /><br />
+                                <input type="password" name="password_login" size="25" placeholder="Password" /><br /><br />
+                                <input type="submit" name="login" value="Login!" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="containerForgottenPassword">
+                <a href="#">Forgotten password?</a>
+            </div>
+        </div>
+        </div>
+        <div id="mainUpdatesContainer">
+            <div id="mainUpdatesHeader">
+                <h2>Recent Updates:</h2>
+            </div>
+            <div id="mainUpdatesContent">
+
+
+
+
+                <div id="mainUpdatesPostContainer">
+                <div id="mainUpdatesPostIcon">
+                    <img src="images/scripticontest.png" alt="">
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>
+                <div id="mainUpdatesPostIcon">
+                    <img src="images/scripticontest.png" alt="">
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>
+                <div id="mainUpdatesPostIcon">
+                    <img src="images/scripticontest.png" alt="">
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>
+                <div id="mainUpdatesPostIcon">
+                    <img src="images/scripticontest.png" alt="">
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>
+                <div id="mainUpdatesPostIcon">
+                    <img src="images/scripticontest.png" alt="">
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>
+                </div>
+
+
+
+
+
+
+                <!--<div id="mainUpdatesPost">
+                    ..
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>
+                <div id="mainUpdatesPost">
+                    ..
+                </div>-->
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-<div id="signupContainer">
-<div id="header_signup">
-<h2>Sign up today it's Free!</h2>
-</div>
-    <div id="container_signup">
-        <table>
-            <tr>
-    			<td width="40%" valign="top">
-    				<form action="index.php" method="POST">
-    					<input type="text" name="fname" size="25" placeholder="Forename" /><br /><br />
-    					<input type="text" name="sname" size="25" placeholder="Surname" /><br /><br />
-    					<input type="text" name="username" size="25" placeholder="Username" /><br /><br />
-    					<input type="text" name="email" size="25" placeholder="Email Address" /><br /><br />
-    					<input type="text" name="email2" size="25" placeholder="Email Address (again)" /><br /><br />
-    					<input type="text" name="password" size="25" placeholder="Password" /><br /><br />
-    					<input type="text" name="password2" size="25" placeholder="Password (again)" /><br /><br />
-    					<input type="submit" name="reg" value="Sign Up!" />
-    				</form>
-    			</td>
-    		</tr>
-    </table>
-</div>
-</div>
-</div>
-<?php include ( "./inc/footer.inc.php" ); ?>
