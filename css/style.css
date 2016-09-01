@@ -3,6 +3,10 @@
     padding:0;
 }
 
+body {
+	background-image: url("../images/pyramid.png");
+}
+
 #alertBar {
 	background-color: #FF4C4C;
 	border-left: 5px solid #B73636;
