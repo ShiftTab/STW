@@ -48,9 +48,20 @@ if ($post != "") {
             </div>
             <div id="profileDescContainer">
                 <div id="profileDescHeader">
-                    <h2>What's on your mind <?php echo $username ?>?</h2>
+                    <h2><?php echo $username ?>'s description</h2>
                 </div>
                 <div id="descMainContent">
+                    <?php
+                    $about_query = mysqli_query($con, "SELECT bio FROM users WHERE username='$username'");
+                    $get_result = mysqli_fetch_assoc($about_query);
+                    $about_the_user = $get_result['bio'];
+
+                    echo $about_the_user;
+                    ?>
+                </div>
+            </div>
+            <div id="profileSideContainer">
+                <div id="profileSideContent">
 
                 </div>
             </div>

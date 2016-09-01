@@ -134,6 +134,12 @@ ul.subNav li a:hover {
 
 #profilePostsContainer {
 	box-shadow: 0 0 10px #BEBEBE;
+	float: right;
+	margin-top: 20px;
+}
+
+#profileSideContainer {
+	box-shadow: 0 0 10px #BEBEBE;
 	float: left;
 	margin-top: 20px;
 }
@@ -150,6 +156,7 @@ ul.subNav li a:hover {
 	color: #FFFFFF;
 	width: 200px;
 	padding: 10px;
+	border-bottom: 3px solid #0080fe;
 }
 
 #profileDescHeader {
@@ -157,6 +164,7 @@ ul.subNav li a:hover {
 	color: #FFFFFF;
 	width: 715px;
 	padding: 10px;
+	border-bottom: 3px solid #0080fe;
 }
 
 #profileImageContent img {
@@ -179,11 +187,20 @@ ul.subNav li a:hover {
 	height: 200px;
 	padding: 20px 10px 0 10px;
 	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
 }
 
 #postsMainContent {
 	background-color: #FFFFFF;
-	width: 960px;
+	width: 715px;
+	height: 500px;
+	padding: 20px 10px 0 10px;
+	margin: 0 auto;
+}
+
+#profileSideContent {
+	background-color: #FFFFFF;
+	width: 200px;
 	height: 500px;
 	padding: 20px 10px 0 10px;
 	margin: 0 auto;
