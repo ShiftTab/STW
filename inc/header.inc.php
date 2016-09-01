@@ -6,18 +6,18 @@ if (!isset($_SESSION["user_login"])) {
 }
 else
 {
-    $username = $_SESSION["user_login"];
+$username = $_SESSION["user_login"];
 }
 ?>
 <!doctype html>
 <html>
-    <head>
-        <title>Shift-Tab</title>
-        <link rel="stylesheet" type="text/css" href="./css/style.css" />
-        <script src="js/main.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <div id="navWrapper">
+<head>
+    <title>Shift-Tab</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="navWrapper">
     <ul class="navMain">
         <li><a class="active" href="#">HOME</a></li>
         <li><a href="#">MEMBERS</a></li>
@@ -26,5 +26,5 @@ else
         <li><a href="#">FORUM</a></li>
     </ul>
 </div>
-    </body>
+</body>
 </html>
