@@ -12,7 +12,7 @@ else
 <!doctype html>
 <html>
     <head>
-        <title>Ghost-Squad</title>
+        <title>Shift-Tab</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
         <script src="js/main.js" type="text/javascript"></script>
     </head>

@@ -47,7 +47,7 @@
     $pswd = md5($pswd);
     $pswd2 = md5($pswd2);
     $query = mysqli_query($con, "INSERT INTO users VALUES ('','$un','$fn','$sn','$em','$pswd','$d','0')");
-    die("<h2>Welcome to Ghost-Squad</h2>Login to your account to get started ...");
+    die("<h2>Welcome to Shift-Tab</h2>Login to your account to get started ...");
     }
     }
     }
