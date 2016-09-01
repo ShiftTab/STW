@@ -193,9 +193,9 @@ ul.subNav li a:hover {
 }
 
 #loginMainForm {
-	width: 250px; 
-	margin: 60px auto 0 auto;
-	text-align: center;
+	margin-top: 70px;
+    display: inline-block;
+    text-align: center;
 }
 
 #containerForgottenPassword {
