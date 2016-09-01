@@ -1,4 +1,37 @@
 <?php include ( "./inc/header.inc.php" ); ?>
+<div id="subNavWrapper">
+    <ul class="subNav">
+        <li><?php echo " Would you like to logout $username? <a href='logout.php'>Logout</a>";?></li>
+    </ul>
+</div>
+<?php
+if (isset($_GET['u'])) {
+    $username = mysqli_real_escape_string($db_conx, $_GET['u']);
+    if (ctype_alnum($username)) {
+        // Check user exists
+        $check = mysqli_query($con, "SELECT username FROM users WHERE username='$username'");
+        if (mysqli_num_rows($check)===1) {
+            $get = mysqli_fetch_assoc($check);
+            $username = $get['username'];
+        }
+        else
+        {
+            echo "<meta http-equiv=\"refresh\" content=\"0; url=http://localhost/ghostsquadwebsite/index.php\">";
+            exit();
+        }
+    }
+}
+$post = @$_POST['post'];
+if ($post != "") {
+    $date_added = date("Y-m-d");
+    $added_by = "$username";
+    $user_posted_to = "$username";
+
+    $sqlCommand = "INSERT INTO posts VALUES('', '$post','$date_added','$added_by','$user_posted_to')";
+    $query = mysqli_query($con, $sqlCommand) or die (mysqli_error());
+
+}
+?>
 
 <div id="mainWrapper">
         <div id="profileContentWrapper">
@@ -7,7 +40,7 @@
             </div>
             <div id="profileImageContentContainer">
                 <div id="profileImageHeader">
-                    <h2>...</h2>
+                    <h2><?php echo $username ?>'s Profile</h2>
                 </div>
                 <div id="profileImageContent">
                     <img src="images/default_pic_ADMIN.png" alt="" width="200" height="200">
@@ -15,7 +48,7 @@
             </div>
             <div id="profileDescContainer">
                 <div id="profileDescHeader">
-                    <h2>...</h2>
+                    <h2>What's on your mind <?php echo $username ?>?</h2>
                 </div>
                 <div id="descMainContent">
 

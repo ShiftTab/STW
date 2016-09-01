@@ -32,7 +32,7 @@
     // Check that passwords match
     if ($pswd==$pswd2) {
     // Check the maximum length of username/forename/surname does not exceed 25 characters
-    if (strlen($un)>25||strlen($fn)>25||strlen($sn)>25) {
+    if (strlen($un)>20||strlen($fn)>25||strlen($sn)>25) {
     echo "The maximum limit for username/forename/surname is 25 characters!";
     }
     else
@@ -90,7 +90,7 @@
       $id = $row["id"];
     }
     $_SESSION["user_login"] =  $user_login;
-    header("location: home.php");
+    header("location: profile.php");
     exit();
     } else {
     echo 'That information is incorrect, try again';

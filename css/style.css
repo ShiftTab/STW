@@ -106,16 +106,16 @@ ul.subNav {
 ul.subNav li {
 	list-style-type: none;
 	display: inline-block;
+	padding: 5px 10px 5px 10px;
 }
 
 ul.subNav li a {
 	position: relative;
-    display: block;
-    color: #FFF;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    width: 50px;
+	color: #FFF;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 50px;
 }
 
 ul.subNav li a:hover {
