@@ -43,7 +43,7 @@ if ($post != "") {
                     <h2><?php echo $username ?>'s Profile</h2>
                 </div>
                 <div id="profileImageContent">
-                    <img src="images/default_pic_ADMIN.png" alt="" width="200" height="200">
+                    <img src="images/default_pic.png" alt="" width="200" height="200">
                 </div>
             </div>
             <div id="profileDescContainer">

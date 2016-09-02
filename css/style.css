@@ -65,6 +65,13 @@ body {
 	padding: 10px;
 }
 
+#newsContentWrapper {
+	width: auto;
+	margin-top: 20px;
+	overflow: auto;
+	padding: 10px;
+}
+
 ul.navMain {
     margin: 0;
     padding: 0;
@@ -227,10 +234,25 @@ ul.subNav li a:hover {
 	padding: 10px;
 }
 
+
+#mainNewsHeader {
+	background-color: #3299FF;
+	color: #FFFFFF;
+	width: 960px;
+	padding: 10px;
+}
 #mainUpdatesContent {
 	background-color: #FFFFFF;
 	width: 500px;
 	height: 500px;
+	padding: 10px;
+	overflow: auto;
+}
+
+#newsUpdatesContent {
+	background-color: #FFFFFF;
+	width: 960px;
+	height: auto;
 	padding: 10px;
 	overflow: auto;
 }
@@ -246,11 +268,24 @@ ul.subNav li a:hover {
 	max-height: 500px;
 }
 
+#mainNewsContainer {
+	max-height: 700px;
+}
+
 #mainUpdatesPostIcon {
-	width: 80px;
-	height: 80px;
+	 width: 80px;
+	 height: 80px;
+	 padding: 10px;
+	 float:left;
+	 background-color: #3299FF;
+	 margin: 10px 0 10px 20px;
+ }
+
+#mainNewsIcon {
+	width: 100px;
+	height: 100px;
 	padding: 10px;
-	float:left;  
+	float:left;
 	background-color: #3299FF;
 	margin: 10px 0 10px 20px;
 }
@@ -262,6 +297,24 @@ ul.subNav li a:hover {
 	padding: 10px;
 	background-color: #F4F4F4;
 	margin: 10px 20px 10px 0;
+}
+
+#mainNewsPost {
+	width:760px;
+	height: 70px;
+	float:left;
+	padding: 10px;
+	background-color: #F4F4F4;
+	margin: -10px 10px 10px 0;
+}
+
+#mainNewsPostTitle{
+	width:760px;
+	height: 10px;
+	float:left;
+	padding: 10px;
+	background-color: #eaeaea;
+	margin: 10px 10px 10px 0;
 }
 
 #logoMain img {
@@ -277,6 +330,14 @@ ul.subNav li a:hover {
     left: 50%;
     margin-top: 15px;
     margin-left: 15px;
+}
+
+#mainNewsIcon img {
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: 25px;
+	margin-left: 25px;
 }
 
 #loginMainForm {
