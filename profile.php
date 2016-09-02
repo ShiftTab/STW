@@ -6,7 +6,7 @@
 </div>
 <?php
 if (isset($_GET['u'])) {
-    $username = mysqli_real_escape_string($db_conx, $_GET['u']);
+    $username = mysqli_real_escape_string($db, $_GET['u']);
     if (ctype_alnum($username)) {
         // Check user exists
         $check = mysqli_query($con, "SELECT username FROM users WHERE username='$username'");
