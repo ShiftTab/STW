@@ -1,5 +1,5 @@
 <?php
-	$db_conx = mysqli_connect("localhost", "root", "", "gsdatabase") or die("Couldn't connect to SQL server");
+	$db = mysqli_connect("localhost", "root", "", "gsdatabase") or die("Couldn't connect to SQL server");
 ?>
 
 
