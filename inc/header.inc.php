@@ -22,8 +22,8 @@ $username = $_SESSION["user_login"];
         <li><a class="active" href="#">HOME</a></li>
         <li><a href="#">MEMBERS</a></li>
         <li><a href="#">STORE</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">FORUM</a></li>
+        <li><a href="news.php">NEWS</a></li>
+        <li><a href="forum.php">FORUM</a></li>
     </ul>
 </div>
 </body>

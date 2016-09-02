@@ -427,3 +427,17 @@ input[type="password"] {
 input[type="password"]:hover {
 	border: 1px solid #252525;
 }
+
+.cat_links {
+	display: block;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #000000;
+	margin-bottom: 5px;
+	background-color: #cccccc;
+	color: #000000;
+}
+.cat_links:hover {
+	background-color: #dddddd;
+}
