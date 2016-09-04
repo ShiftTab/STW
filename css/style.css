@@ -76,7 +76,7 @@ ul.navMain {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #3299FF;
+    background-color: #1470FF;
     text-align: center;
 }
 
@@ -107,7 +107,7 @@ ul.subNav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0073e5;
+    background-color: #3299FF;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 	font-weight: 400;
@@ -156,32 +156,33 @@ ul.subNav li a:hover {
 }
 
 #loginMainHeader {
-	background-color: #3299FF;
+	background-color: #1470FF;
 	color: #FFFFFF;
 	width: 400px;
 	padding: 10px;
 }
 
 #profileImageHeader {
-	background-color: #3299FF;
+	background-color: #1470FF;
 	color: #FFFFFF;
 	width: 200px;
 	padding: 10px;
-	border-bottom: 3px solid #0080fe;
+	border-bottom: 3px solid #1059CC;
 }
 
 #profileDescHeader {
-	background-color: #3299FF;
+	background-color: #1470FF;
 	color: #FFFFFF;
 	width: 715px;
 	padding: 10px;
-	border-bottom: 3px solid #0080fe;
+	border-bottom: 3px solid #1059CC;
 }
 
 #profileImageContent img {
 	display: block;
 	margin: -2px auto 0 -2px;
-	border: 2px solid #3299FF;
+	border: 2px solid #1470FF;
+	border-radius: 50%;
 }
 
 #loginMainContent {
@@ -228,7 +229,7 @@ ul.subNav li a:hover {
 }
 
 #mainUpdatesHeader {
-	background-color: #3299FF;
+	background-color: #1470FF;
 	color: #FFFFFF;
 	width: 500px;
 	padding: 10px;
@@ -236,7 +237,7 @@ ul.subNav li a:hover {
 
 
 #mainNewsHeader {
-	background-color: #3299FF;
+	background-color: #1470FF;
 	color: #FFFFFF;
 	width: 960px;
 	padding: 10px;
@@ -277,7 +278,7 @@ ul.subNav li a:hover {
 	 height: 80px;
 	 padding: 10px;
 	 float:left;
-	 background-color: #3299FF;
+	 background-color: #1470FF;
 	 margin: 10px 0 10px 20px;
  }
 
@@ -286,7 +287,7 @@ ul.subNav li a:hover {
 	height: 100px;
 	padding: 10px;
 	float:left;
-	background-color: #3299FF;
+	background-color: #1470FF;
 	margin: 10px 0 10px 20px;
 }
 
@@ -354,10 +355,11 @@ ul.subNav li a:hover {
     text-align: center;
     border-style: inset;
     font-family: 'Raleway', sans-serif;
+	background-color: #eaeaea;
 }
 
 #containerForgottenPassword a {
-	color: #3299FF;
+	color: #1470FF;
     text-decoration: none;
 }
 
@@ -375,7 +377,7 @@ h2 {
 
 input[type="text"] {
 	background-color: #FFFFFF;
-	border: 1px solid #E2E2E2;
+	border: 1px solid #1470FF;
 	font-size: 15px;
 	padding: 10px;
 	outline: none;
@@ -393,7 +395,7 @@ input[type="text"]:hover {
 }
 
 input[type="submit"] {
-	background-color: #3299FF;
+	background-color: #1470FF;
 	border: none;
 	font-size: 16px;
 	color: #FFFFFF;
@@ -409,7 +411,7 @@ input[type="submit"]:hover {
 
 input[type="password"] {
 	background-color: #FFFFFF;
-	border: 1px solid #E2E2E2;
+	border: 1px solid #1470FF;
 	font-size: 15px;
 	padding: 10px;
 	width: 250px;
@@ -433,11 +435,32 @@ input[type="password"]:hover {
 	padding: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border: 1px solid #000000;
-	margin-bottom: 5px;
-	background-color: #cccccc;
-	color: #000000;
+	background-color: #F9F9F9;
+	color: #000;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	border-left: 1px inset #1470FF;
+	border-right: 1px inset #1470FF;
 }
 .cat_links:hover {
-	background-color: #dddddd;
+	background-color: #CFDDF4;
+	color: #000;
+}
+
+.forum_desc {
+	background-color: #ffffff;
+	padding: 10px;
+	border-left: 1px inset #1470FF;
+	border-right: 1px inset #1470FF;
+	border-bottom: 1px inset #1470FF;
+}
+
+.forumHeader {
+	background-color: #1470FF;
+	color: #FFFFFF;
+	padding: 10px;
+	border-bottom: 3px solid #1470FF;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
 }
