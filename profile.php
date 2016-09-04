@@ -48,7 +48,7 @@ if ($post != "") {
             </div>
             <div id="profileDescContainer">
                 <div id="profileDescHeader">
-                    <h2><?php echo $username ?>'s description</h2>
+                    <h2><?php echo $username ?>'s Description</h2>
                 </div>
                 <div id="descMainContent">
                     <?php
@@ -67,7 +67,17 @@ if ($post != "") {
             </div>
             <div id="profilePostsContainer">
                 <div id="postsMainContent">
-
+                    <?php
+                    $getposts = mysqli_query($con, "SELECT * FROM posts WHERE user_posted_to='$username' ORDER BY id DESC LIMIT 10") or die(mysqli_error());
+                    while($row = mysqli_fetch_assoc($getposts)) {
+                        $id = $row['id'];
+                        $body = $row['body'];
+                        $date_added = $row['date_added'];
+                        $added_by = $row['added_by'];
+                        $user_posted_to = $row['user_posted_to'];
+                        echo "<div style='padding: 10px;'><div class='posted_by'><a href='$added_by'><img src='images/default_pic.png' height='50' style='border: 1px solid #1470FF; float: left; margin-right: 10px;'>$added_by</a> - $date_added</div><br />$body<hr></div>";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
