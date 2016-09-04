@@ -8,10 +8,13 @@
 </div>
 
 <div id="mainWrapper">
+    <br />
+    <br />
     <div id="alertBar">
         <p>This website is currently under development!</p>
     </div>
 
+    <div class="forumHeader">Shift-Tab Main</div>
 <?php
 $result = mysqli_query ($con, "SELECT * FROM categories ORDER BY category_title ASC");
 $categories = "";
@@ -22,7 +25,8 @@ if (mysqli_num_rows($result) > 0) {
         $title = $row['category_title'];
         $description = $row['category_description'];
         // Append the data from the categories table into a list of links
-        $categories .= "<a href='view_category.php?cid=".$id."' class='cat_links'>".$title." - <font size='-1'>".$description."</font></a>";
+        $categories .= "<a href='view_category.php?cid=".$id."' class='cat_links'>".$title."</font></a>";
+        $categories .= "<div class='forum_desc' <font size='-1'>".$description."</div>";
     }
     // Display list of links
     echo $categories;
